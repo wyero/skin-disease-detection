@@ -1,5 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
+  background-color: #121212;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -11,3 +16,62 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+*::-webkit-scrollbar {
+  width: 6px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(74, 74, 132);
+  border-radius: 14px;
+}
+
+.border-animate{
+  width: 110px;
+  height: 45px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.border-animate::before{
+  content: "";
+  background-image: conic-gradient(
+    #ff0052 20deg,
+    transparent 120deg
+  );
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  animation: rotate 2s linear infinite;
+}
+
+.border-animate::after{
+  content: "Mulai";
+  color: red;
+  width: 100px;
+  height: 40px;
+  background-color: #101010;
+  position: absolute;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes rotate {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.text-home{
+  text-shadow: 1px 1px red;
+}
+
