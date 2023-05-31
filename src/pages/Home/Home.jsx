@@ -33,7 +33,7 @@ const Home = () => {
                             </Link>
                         </div>
                         <div className='border-2 h-10 border-red-500 rounded-full p-2' data-aos='fade-down-right' data-aos-duration='2000'>
-                            <Link to="https://www.facebook.com/frizy08/">
+                            <Link to="https://www.facebook.com/frizy08/" target='_blank'>
                                 <ImFacebook className='text-red-500'/>
                             </Link>
                         </div>
