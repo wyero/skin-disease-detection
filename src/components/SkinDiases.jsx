@@ -4,7 +4,7 @@ import { menuDisease } from '../data'
 
 const SkinDiases = () => {
   return (
-    <div id='skin-disease' className='font-poppins text-white mt-52 md:mt-20 lg:mt-0 mx-50'>
+    <div id='skin-disease' className='font-poppins text-white mt-52 md:mt-20 lg:mt-0'>
         <div className='flex items-center justify-center gap-1' data-aos='fade-down' data-aos-duration='1000'>
             <div className='w-10 h-[5px] bg-red-500 rounded-bl-xl rounded-tr-xl'></div>
             <p className='text-center font-700 text-red-500 text-3xl'>Types of Skin Diseases</p>
