@@ -15,7 +15,7 @@ app.config['UPLOAD_PATH'] = './image'
 
 model = None
 
-skin_disease_classes = ['Atopic Dermatitis', 'Eczema', 'Herpes', 'Molluscum', 'Varicella', 'Vitiligo']
+skin_disease_classes = ['Atopic Dermatitis', 'Eczema', 'Herpes', 'Vitiligo']
 
 @app.route('/api/predict', methods=["POST"])
 def apiDeteksi():
